@@ -2,17 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { MessageAppComponent } from './message-app.component';
+import{ MessageDashboardComponent} from './Messaging/message-dashboard.compontent';
 
 @NgModule({
   declarations: [
-    AppComponent
+    MessageAppComponent,
+    MessageDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MessageAppComponent]
 })
 export class AppModule { }
